@@ -5,12 +5,12 @@ function destructivelyAppendCat(name){
     return cats.push(name);
 }
 
-destructivelyAppendCat("Ralph");
+destructivelyAppendCat("Martin");
 
 function destructivelyPrependCat(name){
     return cats.unshift(name);
 }
-destructivelyPrependCat("Bob");
+destructivelyPrependCat("Frank");
 
 function destructivelyRemoveLastCat(name){
     return cats.pop(name);
@@ -25,12 +25,12 @@ destructivelyRemoveFirstCat();
 function appendCat(name){
     return [...cats,name];
 }
-appendCat("Broom");
+appendCat("Brenda");
 
 function prependCat(name){
     return [name,...cats];
 }
-prependCat("Arnold");
+prependCat("Vincent");
 
 function removeLastCat(){
     return cats.slice(0,2);
